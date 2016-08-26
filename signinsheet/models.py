@@ -8,7 +8,7 @@ class Class(models.Model):
     SPRING = 0
     FALL = 1
 
-    SEMESTERS =(
+    SEMESTERS = (
         (SPRING, 'Spring'),
         (FALL, 'Fall')
     )
@@ -18,14 +18,8 @@ class Class(models.Model):
     class_id = models.CharField(max_length=12)
     name = models.CharField(max_length=30)
 
-
-class Session(models.Model):
-    """
-    One of these for each day of the term
-    """
-    date = models.DateField()
-    password = models.CharField(max_length=16)
-    session_class = models.ForeignKey(Class)
+    def __str__(self):
+        return self.class_id + ' ' + str((self.SEMESTERS[self.semester])[1]) + ' ' + str(self.year)
 
 
 class Student(models.Model):
@@ -36,3 +30,16 @@ class Student(models.Model):
     last_name = models.CharField(max_length=30)
     student_id = models.CharField(max_length=6)
     enrolled_class = models.ForeignKey(Class)
+
+    def __str__(self):
+        return self.student_id + ' ' + self.last_name
+
+
+class Session(models.Model):
+    """
+    One of these for each day of the term
+    """
+    date = models.DateField()
+    password = models.CharField(max_length=16)
+    session_class = models.ForeignKey(Class)
+    students_present = models.ManyToManyField(Student)
