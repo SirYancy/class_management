@@ -1,0 +1,38 @@
+from django.db import models
+
+
+class Class(models.Model):
+    """
+    Models a class with a list of students
+    """
+    SPRING = 0
+    FALL = 1
+
+    SEMESTERS =(
+        (SPRING, 'Spring'),
+        (FALL, 'Fall')
+    )
+
+    semester = models.SmallIntegerField(choices=SEMESTERS)
+    year = models.IntegerField()
+    class_id = models.CharField(max_length=12)
+    name = models.CharField(max_length=30)
+
+
+class Session(models.Model):
+    """
+    One of these for each day of the term
+    """
+    date = models.DateField()
+    password = models.CharField(max_length=16)
+    session_class = models.ForeignKey(Class)
+
+
+class Student(models.Model):
+    """
+    Each student must sign in as a 'user' sort of each day
+    """
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    student_id = models.CharField(max_length=6)
+    enrolled_class = models.ForeignKey(Class)
