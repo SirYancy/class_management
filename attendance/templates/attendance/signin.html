@@ -18,10 +18,14 @@
 
 <div class="container">
     <h3>Please Sign In</h3>
+    <strong>{{ request.GET.class }}</strong><br />
     <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
-    <form action="{% url 'attendance:verify' %}" method="get">
+
+    <form action="{% url 'attendance:verify' %}?class={{ request.GET.class }}" method="get">
         {%  csrf_token %}
         <div class="form-group">
+            <label class="control-label" for="class_id">Class</label>
+            <input type="text" class="form-control" name="class_id" id="class_id" required readonly value="{{ request.GET.class }}"/>
             {% for field in form %}
                 <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
                 {{ field|attr:"class:form-control" }}
