@@ -19,7 +19,7 @@
 <div class="container">
     <h3>Please Sign In</h3>
     <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
-    <form action="{% url 'attendance:signin' %}" method="get">
+    <form action="{% url 'attendance:verify' %}" method="get">
         {%  csrf_token %}
         <div class="form-group">
             {% for field in form %}

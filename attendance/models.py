@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 
 class Class(models.Model):
@@ -39,7 +40,7 @@ class Session(models.Model):
     """
     One of these for each day of the term
     """
-    date = models.DateField()
+    date = models.DateField(default=datetime.date.today)
     password = models.CharField(max_length=16)
     session_class = models.ForeignKey(Class)
     students_present = models.ManyToManyField(Student, blank=True)
