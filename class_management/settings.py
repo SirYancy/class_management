@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'widget_tweaks',
     'attendance',
     'rest_framework',
     'rest_framework.authtoken',

@@ -8,10 +8,19 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 
 from .models import Class, Student, Session
+from .forms import SignInForm
 
 
-class SignInView(generic.TemplateView):
+class SignInView(FormView):
     template_name = 'attendance/signin.html'
+    form_class = SignInForm
+
+    def form_valid(self, form):
+        return HttpResponse("%s" % self.request.path)
 
 
-#def verify_sign(request):
+def verify(request):
+    if request.POST:
+        return HttpResponse("%s" % request.path)
+    if request.GET:
+        return HttpResponse("%s" % request.path)

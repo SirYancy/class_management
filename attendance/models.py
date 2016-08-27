@@ -42,4 +42,4 @@ class Session(models.Model):
     date = models.DateField()
     password = models.CharField(max_length=16)
     session_class = models.ForeignKey(Class)
-    students_present = models.ManyToManyField(Student)
+    students_present = models.ManyToManyField(Student, blank=True)

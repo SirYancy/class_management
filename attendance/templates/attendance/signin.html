@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load staticfiles %}
+{% load static i18n widget_tweaks %}
+
 <head>
     <meta charset="UTF-8">
     <title>Sign In</title>
@@ -17,17 +18,16 @@
 
 <div class="container">
     <h3>Please Sign In</h3>
-    {% now "SHORT_DATE_FORMAT" %}
-    <!--{% url 'signinsheet:verify' %} -->
-    <form action="#" method="get">
+    <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
+    <form action="{% url 'attendance:signin' %}" method="get">
         {%  csrf_token %}
         <div class="form-group">
-            <label for="student_id">Student ID</label>
-            <input type="text" class="form-control" id="student_id" placeholder="Enter Student ID"/>
-            <label for="today_password">Today's Password</label>
-            <input type="password" class="form-control" id="today_password" />
+            {% for field in form %}
+                <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
+                {{ field|attr:"class:form-control" }}
+            {% endfor %}
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" value="Submit" class="btn btn-primary" />
     </form>
 </div>
 
