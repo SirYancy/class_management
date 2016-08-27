@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.http import HttpResponseRedirect
 
 urlpatterns = [
-    url(r'^$', lambda r: HttpResponseRedirect('signinsheet/')),
-    url(r'^signinsheet/', include('signinsheet.urls', namespace='signinsheet')),
+    url(r'^$', lambda r: HttpResponseRedirect('attendance/')),
+    url(r'^attendance/', include('attendance.urls', namespace='attendance')),
     url(r'^admin/', admin.site.urls),
 ]

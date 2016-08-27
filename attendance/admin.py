@@ -1,5 +1,5 @@
 from django.contrib import admin
-from signinsheet.models import Student, Class, Session
+from attendance.models import Student, Class, Session
 
 
 class ClassAdmin(admin.ModelAdmin):

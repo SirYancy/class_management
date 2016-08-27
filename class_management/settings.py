@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'signinsheet',
+    'attendance',
     'rest_framework',
     'rest_framework.authtoken',
     'django.contrib.admin',
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Attendance.urls'
+ROOT_URLCONF = 'class_management.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Attendance.wsgi.application'
+WSGI_APPLICATION = 'class_management.wsgi.application'
 
 
 # Database

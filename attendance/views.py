@@ -11,7 +11,7 @@ from .models import Class, Student, Session
 
 
 class SignInView(generic.TemplateView):
-    template_name = 'signinsheet/signin.html'
+    template_name = 'attendance/signin.html'
 
 
 #def verify_sign(request):
