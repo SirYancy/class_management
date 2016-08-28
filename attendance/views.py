@@ -29,6 +29,6 @@ def verify(request):
         if student.enrolled_class == current_class and request.GET.get('today_password') == s.password:
             s.students_present.add(student)
             s.save()
-            return HttpResponse("Thank you!")
+            return HttpResponse("Thank you, %s" % student.first_name)
 
         return HttpResponse("Password, Student ID, or Class incorrect.")
