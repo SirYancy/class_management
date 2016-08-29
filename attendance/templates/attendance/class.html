@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static i18n widget_tweaks %}
 <head>
+
     <meta charset="UTF-8">
     <title>Choose Your Class</title>
 
@@ -18,11 +20,9 @@
     </div>
     <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
 
-    <form action="{% url 'attendance:signin' %}" method="get">
+    <form action="{% url 'attendance:choose_class' %}" method="post">
         {%  csrf_token %}
         <div class="form-group">
-            <label class="control-label" for="class_id">Class</label>
-            <input type="text" class="form-control" name="class_id" id="class_id" required readonly value="{{ request.GET.class }}"/>
             {% for field in form %}
                 <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
                 {{ field|attr:"class:form-control" }}

@@ -9,7 +9,17 @@ from django.utils import timezone
 from datetime import date
 
 from .models import Class, Student, Session
-from .forms import SignInForm
+from .forms import SignInForm, ChooseClassForm
+
+
+class ClassView(FormView):
+    template_name = 'attendance/class.html'
+    form_class = ChooseClassForm
+    success_url = '/attendance/signin/'
+
+    def form_valid(self, form):
+        c = form.cleaned_data['classes']
+        return HttpResponseRedirect(self.get_success_url() + "?class=" + c.class_id)
 
 
 class SignInView(FormView):
