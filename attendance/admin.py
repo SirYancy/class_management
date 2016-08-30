@@ -19,7 +19,12 @@ class StudentAdmin(admin.ModelAdmin):
 
 
 class SessionAdmin(admin.ModelAdmin):
-    list_display = ('date',)
+    list_display = ('date', 'session_class')
+    list_filter = ['session_class']
+    ordering = ('-date',)
+
+    def formfield_for_manytomany(self, db_field, request, **kwargs):
+        if db_field.name = ''
 
 
 admin.site.register(Class, ClassAdmin)
