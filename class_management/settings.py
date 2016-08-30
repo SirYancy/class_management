@@ -22,11 +22,11 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'apple'
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'apple'
+# SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -126,6 +126,7 @@ USE_TZ = True
 
 # Update database information configuration with $DATABASE_URL.
 db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
