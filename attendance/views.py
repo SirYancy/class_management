@@ -26,6 +26,20 @@ class SignInView(FormView):
     form_class = SignInForm
 
 
+class ClassIndexView(generic.ListView):
+    """
+    Root View for classes
+    """
+    template_name = 'attendance/class_index.html'
+    context_object_name = 'class_index'
+
+    def get_queryset(self):
+        classes = None
+        if self.request.user.is_authenticated():
+            classes = Class.objects.all()
+        return classes
+
+
 class TabulateView(generic.DetailView):
     """
     Tabulates Attendance Data for easy copying.  Next will be a rest interface to download it as a csv
@@ -41,7 +55,7 @@ class TabulateView(generic.DetailView):
 
         if self.request.user.is_authenticated():
             classes = Class.objects.all()
-            sessions = Session.objects.filter(session_class__in=classes)
+            sessions = Session.objects.order_by('date')
             context['classes'] = classes
             context['sessions'] = sessions
         return context
