@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, render
 from django.template import RequestContext
 from django.views import generic
 from django.views.generic.edit import FormView
@@ -46,22 +46,26 @@ class TabulateView(generic.DetailView):
     """
     template_name = 'attendance/tabulate.html'
     context_object_name = 'attendance_data'
-
-    def get_queryset(self):
-        return Class.objects.all()
+    model = Class
 
     def get_context_data(self, **kwargs):
         context = super(TabulateView, self).get_context_data(**kwargs)
 
         if self.request.user.is_authenticated():
-            classes = Class.objects.all()
-            sessions = Session.objects.order_by('date')
-            context['classes'] = classes
+            my_class = self.get_object()
+            sessions = Session.objects.filter(session_class=my_class).order_by('date')
+            students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
             context['sessions'] = sessions
+            context['students'] = students
         return context
 
 
 def verify(request):
+    """
+    Verifies student id, class, and password. If it all matches up, the student is marked present for the day.
+    :param request:
+    :return:
+    """
     if request.GET:
         today = date.today()
         student = Student.objects.get(student_id=request.GET.get('student_id'))
@@ -86,7 +90,6 @@ def user_login(request):
     :param request:
     :return:
     """
-    context = RequestContext(request)
 
     if request.method == 'POST':
         username = request.POST['username']
@@ -95,14 +98,14 @@ def user_login(request):
         if user:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect('/attendance/tabulate/')
+                return HttpResponseRedirect('/attendance/classes/')
             else:
                 return HttpResponse('Your account is disabled')
         else:
             print('Invalid Login')
             return HttpResponse('Invalid login details')
     else:
-        return render_to_response('attendance/login.html', {}, context)
+        return render(request, 'attendance/login.html')
 
 
 @login_required

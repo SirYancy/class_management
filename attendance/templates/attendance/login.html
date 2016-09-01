@@ -18,16 +18,14 @@
     <div class="container">
         <h1>Please login:</h1>
         <p>Note: If you are a student, this is not where you login. I don't even know how you got here.</p>
-
         <form id="login_form" method="post" action="{% url 'attendance:login' %}">
-            {% csrf_token %}
             <div class="form-group">
-                <label class="control-label" for="username">Username:</label><input type="text" id="username" value="" class="form-control"/>
-                <label class="control-label" for="password">Password:</label><input type="password" id="password" value="" class="form-control"/>
-                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                {% csrf_token %}
+                <label class="control-label" for="username">Username:</label><input type="text" name="username" id="username" value="" class="form-control"/>
+                <label class="control-label" for="password">Password:</label><input type="password" name="password" id="password" value="" class="form-control"/>
+                <input name="submit" type="submit" class="btn btn-primary" value="Sumbit" />
             </div>
         </form>
-
     </div>
 
 <!-- JQuery -->
