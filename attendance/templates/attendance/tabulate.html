@@ -27,7 +27,13 @@
                     <table class="table table-bordered table-condensed table-hover">
                         <thead>
                         <tr>
+                            {% for session in sessions %}
 
+                                {% if session.session_class_id == attendance_data.id %}
+                                    <td>{{ session.date }}</td>
+                                {% endif %}
+
+                            {% endfor %}
                         </tr>
                         </thead>
                     </table>

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670d06a5-36fd-4c0b-810f-a8ab9c6cc755" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/attendance/templates/attendance/class_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/class_management.iml" afterPath="$PROJECT_DIR$/.idea/class_management.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attendance/templates/attendance/tabulate.html" afterPath="$PROJECT_DIR$/attendance/templates/attendance/tabulate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attendance/urls.py" afterPath="$PROJECT_DIR$/attendance/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attendance/views.py" afterPath="$PROJECT_DIR$/attendance/views.py" />
     </list>
     <ignored path="Attendance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,31 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance/templates/attendance/class_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tabulate.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/attendance/templates/attendance/tabulate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+            <state relative-caret-position="476">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -967,8 +941,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance/templates/attendance/tabulate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+        <state relative-caret-position="476">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
