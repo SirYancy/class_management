@@ -57,6 +57,8 @@ class TabulateView(generic.DetailView):
             students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
             context['sessions'] = sessions
             context['students'] = students
+
+
         return context
 
 

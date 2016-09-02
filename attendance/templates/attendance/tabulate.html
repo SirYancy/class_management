@@ -38,21 +38,16 @@
                         </thead>
                         {% for student in students %}
 
-                            {% if student.enrolled_class == attendance_data %}
-                                <tr>
-                                    <td>{{ student.last_name }}</td>
-
-                                    {% for session in sessions %}
-                                        {% if session.session_class_id == attendance_data.id %}
-                                            {% if student in session.students_present %}
-                                                <td>P</td>
-                                            {% else %}
-                                                <td>A</td>
-                                            {% endif %}
-                                        {% endif %}
-                                    {% endfor %}
-                                </tr>
-                            {% endif %}
+                            <tr>
+                                <td>{{ student.last_name }}, {{ student.first_name }}</td>
+                                {% for session in sessions %}
+                                    {% if student in session.students_present.all %}
+                                        <td>P</td>
+                                    {% else %}
+                                        <td>A</td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
 
                         {% endfor %}
 
