@@ -44,3 +44,7 @@ class Session(models.Model):
     password = models.CharField(max_length=16)
     session_class = models.ForeignKey(Class)
     students_present = models.ManyToManyField(Student, blank=True)
+    is_open = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.date.strftime("%Y/%m-%d")

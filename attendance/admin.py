@@ -19,7 +19,8 @@ class StudentAdmin(admin.ModelAdmin):
 
 
 class SessionAdmin(admin.ModelAdmin):
-    list_display = ('date', 'session_class')
+    list_display = ('date', 'session_class', 'is_open',)
+    list_editable = ('is_open',)
     list_filter = ['session_class']
     ordering = ('-date',)
 

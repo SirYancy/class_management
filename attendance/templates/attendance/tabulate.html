@@ -53,6 +53,7 @@
 
                     </table>
                 {% endif %}
+            <a href="{% url 'attendance:csv' attendance_data.pk %}" class="btn btn-primary">Download CSV</a>
             </div>
         {% endif %}
 

@@ -1,3 +1,5 @@
+import csv
+
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
@@ -50,16 +52,48 @@ class TabulateView(generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(TabulateView, self).get_context_data(**kwargs)
-
         if self.request.user.is_authenticated():
             my_class = self.get_object()
-            sessions = Session.objects.filter(session_class=my_class).order_by('date')
-            students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
-            context['sessions'] = sessions
-            context['students'] = students
-
+            my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
+            my_students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
+            context['sessions'] = my_sessions
+            context['students'] = my_students
 
         return context
+
+
+def output_csv(request, class_id):
+    """
+    Outputs selected class to csv file
+    :param request:
+    :return:
+    """
+    my_class = Class.objects.get(id=class_id)
+    disp = 'attachment; filename="attendance_data' + my_class.class_id + '.csv"'
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = disp
+
+    my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
+    my_students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
+
+    writer = csv.writer(response)
+    title_row = [my_class.class_id + " " + my_class.name]
+    writer.writerow(title_row)
+    header_row = ["Name"]
+    for session in my_sessions:
+        header_row.append(session.date)
+    writer.writerow(header_row)
+
+    for student in my_students:
+        data_row = [student.last_name + ", " + student.first_name]
+        for session in my_sessions:
+            if student.session_set.filter(id=session.id).exists():
+                data_row.append("P")
+            else:
+                data_row.append("A")
+        writer.writerow(data_row)
+
+    return response
 
 
 def verify(request):
@@ -78,6 +112,8 @@ def verify(request):
 
         if s.students_present.filter(id=student.id).exists():
             return HttpResponse("You are already signed in")
+        elif not s.is_open:
+            return HttpResponse("This session is closed for signin.")
         elif student.enrolled_class == current_class and request.GET.get('today_password') == s.password:
             s.students_present.add(student)
             s.save()
