@@ -9,8 +9,15 @@ from django.views import generic
 from django.views.generic.edit import FormView
 from datetime import date
 
+from rest_framework import generics
+from rest_framework import permissions
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from .models import Class, Student, Session
 from .forms import SignInForm, ChooseClassForm
+from .serializers import ClassSerializer, TokenSerializer, StudentSerializer, SessionSerializer, UserSerializer
 
 
 class ClassView(FormView):
@@ -155,3 +162,37 @@ def user_logout(request):
     """
     logout(request)
     return HttpResponseRedirect('/attendance/')
+
+
+# <-------------------- REST API VIEWS ---------------------->
+class StudentList(generics.ListAPIView):
+    """
+    List all Students
+    """
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+
+class SessionList(generics.ListCreateAPIView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+    queryset = Session.objects.all()
+    serializer_class = SessionSerializer
+
+
+class ClassList(generics.ListCreateAPIView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+    queryset = Class.objects.all()
+    serializer_class = ClassSerializer
+
+
+class CurrentUser(APIView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        serializer = UserSerializer(request.user)
+        return Response(serializer.data)

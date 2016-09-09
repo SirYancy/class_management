@@ -12,3 +12,19 @@ urlpatterns = [
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
 ]
+
+# Rest Interface
+urlpatterns += [
+    url(r'^rest_classes/$',
+        views.ClassList.as_view(),
+        name='rest_class'),
+    url(r'^rest_students/$',
+        views.StudentList.as_view(),
+        name='rest_students'),
+    url(r'^rest_sessions/$',
+        views.SessionList.as_view(),
+        name='rest_sessions'),
+    url(r'^rest_current_user/$',
+        views.CurrentUser.as_view(),
+        name='rest_current_user'),
+]
