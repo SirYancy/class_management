@@ -22,3 +22,9 @@ urlpatterns = [
     url(r'^attendance/', include('attendance.urls', namespace='attendance')),
     url(r'^admin/', admin.site.urls),
 ]
+
+from rest_framework.authtoken import views
+
+urlpatterns += [
+    url(r'^api-token-auth/', views.obtain_auth_token),
+]
