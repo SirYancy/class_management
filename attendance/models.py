@@ -24,6 +24,9 @@ class Class(models.Model):
     class_id = models.CharField(max_length=12)
     name = models.CharField(max_length=30)
 
+    class Meta:
+        verbose_name_plural="Classes"
+
     def __str__(self):
         return self.class_id + ' ' + str((self.SEMESTERS[self.semester])[1]) + ' ' + str(self.year)
 
@@ -52,7 +55,7 @@ class Session(models.Model):
     is_open = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.date.strftime("%Y/%m-%d")
+        return self.date.strftime("%Y-%m-%d")
 
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
