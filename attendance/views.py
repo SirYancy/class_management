@@ -169,20 +169,41 @@ class StudentList(generics.ListAPIView):
     """
     List all Students
     """
+    model = Student
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.IsAuthenticated,)
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
+    ordering_fields = ('last_name',)
+    ordering = ('last_name',)
+
+    def get_queryset(self):
+        key = self.kwargs['class_key']
+        c = Class.objects.get(pk=key)
+        return Student.objects.filter(enrolled_class=c).order_by('-last_name')
 
 
 class SessionList(generics.ListCreateAPIView):
+    """
+    List all Sessions
+    """
+    model = Session
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.IsAuthenticated,)
-    queryset = Session.objects.all()
     serializer_class = SessionSerializer
+    ordering_fields = ('date',)
+    ordering = ('date',)
+
+    def get_queryset(self):
+        key = self.kwargs['class_key']
+        c = Class.objects.get(pk=key)
+        return Session.objects.filter(session_class=c).order_by('-date')
 
 
 class ClassList(generics.ListCreateAPIView):
+    """
+    List all Classes
+    """
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.IsAuthenticated,)
     queryset = Class.objects.all()
