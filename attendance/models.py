@@ -25,7 +25,7 @@ class Class(models.Model):
     name = models.CharField(max_length=30)
 
     class Meta:
-        verbose_name_plural="Classes"
+        verbose_name_plural = "Classes"
 
     def __str__(self):
         return self.class_id + ' ' + str((self.SEMESTERS[self.semester])[1]) + ' ' + str(self.year)
