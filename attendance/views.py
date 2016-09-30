@@ -200,6 +200,16 @@ class SessionList(generics.ListCreateAPIView):
         return Session.objects.filter(session_class=c).order_by('-date')
 
 
+class SessionDetail(generics.RetrieveUpdateDestroyAPIView):
+    """
+    Retrieve, update, or delete a Session
+    """
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (permissions.IsAuthenticated,)
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+
+
 class ClassList(generics.ListCreateAPIView):
     """
     List all Classes
