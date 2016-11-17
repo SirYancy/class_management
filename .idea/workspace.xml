@@ -2,8 +2,571 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670d06a5-36fd-4c0b-810f-a8ab9c6cc755" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attendance/admin.py" afterPath="$PROJECT_DIR$/attendance/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class_management/urls.py" afterPath="$PROJECT_DIR$/class_management/urls.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Doxyfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/0001__initial_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/0002__auto__20160902__1307_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/0003__auto__20160922__1447_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/admin_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/annotated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/apps_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/attendance_2____init_____8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/attendance_2migrations_2____init_____8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/attendance_2urls_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/bc_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/bdwn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/class__management_2____init_____8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/class__management_2urls_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_class_admin-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_class_admin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_class_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_class_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_class_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_class_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_session_admin-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_session_admin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_session_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_session_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_session_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_session_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_student_admin-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_student_admin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_student_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_student_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_student_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1admin_1_1_student_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1apps_1_1_signinsheet_config-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1apps_1_1_signinsheet_config.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1apps_1_1_signinsheet_config__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1apps_1_1_signinsheet_config__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1apps_1_1_signinsheet_config__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1apps_1_1_signinsheet_config__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_choose_class_form-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_choose_class_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_choose_class_form__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_choose_class_form__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_choose_class_form__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_choose_class_form__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_sign_in_form-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_sign_in_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_sign_in_form__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_sign_in_form__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_sign_in_form__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1forms_1_1_sign_in_form__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10001__initial_1_1_migration-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10001__initial_1_1_migration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10001__initial_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10001__initial_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10001__initial_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10001__initial_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class_1_1_meta-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class_1_1_meta.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_class__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_session-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_session.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_session__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_session__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_session__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_session__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_student-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_student.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_student__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_student__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_student__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1models_1_1_student__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer_1_1_meta-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer_1_1_meta.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_class_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer_1_1_meta-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer_1_1_meta.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_session_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer_1_1_meta-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer_1_1_meta.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_student_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer_1_1_meta-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer_1_1_meta.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_token_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer_1_1_meta-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer_1_1_meta.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1serializers_1_1_user_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_index_view-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_index_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_index_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_index_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_index_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_index_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_list-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_view-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_class_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_current_user-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_current_user.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_current_user__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_current_user__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_current_user__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_current_user__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_detail-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_detail__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_detail__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_detail__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_detail__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_list-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_session_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_sign_in_view-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_sign_in_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_sign_in_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_sign_in_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_sign_in_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_sign_in_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_student_list-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_student_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_student_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_student_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_student_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_student_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_tabulate_view-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_tabulate_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_tabulate_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_tabulate_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_tabulate_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classattendance_1_1views_1_1_tabulate_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/closed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/dir_93cf3928243ad72cb4656587bf846eda.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/dir_bdc43e3c0b88c037f0ab670c0c7cac56.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/dir_e58947fddd32adcc57584a9bbb47cd1c.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/doc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/doxygen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/doxygen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/dynsections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/files.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/folderclosed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/folderopen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/forms_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/graph_legend.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/graph_legend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/graph_legend.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/hierarchy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_0.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_0.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_1.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_1.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_10.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_10.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_11.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_11.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_12.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_12.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_13.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_13.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_14.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_14.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_15.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_15.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_16.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_16.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_17.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_17.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_18.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_18.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_2.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_2.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_3.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_3.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_4.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_4.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_5.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_5.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_6.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_6.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_7.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_7.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_8.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_8.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_9.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherit_graph_9.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/inherits.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/manage_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/menudata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/models_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/namespaceattendance_1_1admin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/namespaceclass__management_1_1settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/namespaceclass__management_1_1urls.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/namespaceclass__management_1_1wsgi.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/namespaces.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/nav_f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/nav_g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/nav_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/all_5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/classes_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/mag_sel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/namespaces_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/namespaces_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/namespaces_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/namespaces_1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/nomatches.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/search_l.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/search_m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/search_r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/search/searchdata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/serializers_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/settings_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/splitbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/sync_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/sync_on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/tab_a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/tab_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/tab_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/tab_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/tests_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/views_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/html/wsgi_8py_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/annotated.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_class_admin.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_class_admin.tex.tmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_class_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_class_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_class_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_class_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_session_admin.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_session_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_session_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_session_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_session_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_student_admin.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_student_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_student_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_student_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1admin_1_1_student_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1apps_1_1_signinsheet_config.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1apps_1_1_signinsheet_config__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1apps_1_1_signinsheet_config__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1apps_1_1_signinsheet_config__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1apps_1_1_signinsheet_config__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_choose_class_form.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_choose_class_form__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_choose_class_form__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_choose_class_form__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_choose_class_form__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_sign_in_form.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_sign_in_form__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_sign_in_form__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_sign_in_form__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1forms_1_1_sign_in_form__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10001__initial_1_1_migration.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10001__initial_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10001__initial_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10001__initial_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10001__initial_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_class.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_class_1_1_meta.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_class__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_class__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_class__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_class__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_session.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_session__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_session__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_session__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_session__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_student.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_student__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_student__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_student__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1models_1_1_student__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_class_serializer.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_class_serializer_1_1_meta.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_class_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_class_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_class_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_class_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_session_serializer.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_session_serializer_1_1_meta.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_session_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_session_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_session_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_session_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_student_serializer.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_student_serializer_1_1_meta.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_student_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_student_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_student_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_student_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_token_serializer.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_token_serializer_1_1_meta.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_token_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_token_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_token_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_token_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_user_serializer.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_user_serializer_1_1_meta.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_user_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_user_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_user_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1serializers_1_1_user_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_index_view.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_index_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_index_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_index_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_index_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_list.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_view.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_class_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_current_user.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_current_user__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_current_user__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_current_user__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_current_user__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_detail.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_detail__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_detail__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_detail__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_detail__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_list.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_session_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_sign_in_view.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_sign_in_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_sign_in_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_sign_in_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_sign_in_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_student_list.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_student_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_student_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_student_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_student_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_tabulate_view.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_tabulate_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_tabulate_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_tabulate_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/classattendance_1_1views_1_1_tabulate_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/dir_93cf3928243ad72cb4656587bf846eda.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/dir_bdc43e3c0b88c037f0ab670c0c7cac56.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/dir_e58947fddd32adcc57584a9bbb47cd1c.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/doxygen.sty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/hierarchy.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/make.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/namespaceattendance_1_1admin.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/namespaceclass__management_1_1settings.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/namespaceclass__management_1_1urls.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/namespaceclass__management_1_1wsgi.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/namespaces.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.aux" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.ilg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.ind" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/latex/refman.toc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_class_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_class_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_class_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_class_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_session_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_session_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_session_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_session_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_student_admin__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_student_admin__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_student_admin__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1admin_1_1_student_admin__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1apps_1_1_signinsheet_config__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1apps_1_1_signinsheet_config__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1apps_1_1_signinsheet_config__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1apps_1_1_signinsheet_config__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_choose_class_form__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_choose_class_form__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_choose_class_form__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_choose_class_form__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_sign_in_form__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_sign_in_form__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_sign_in_form__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1forms_1_1_sign_in_form__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10001__initial_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10001__initial_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10001__initial_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10001__initial_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10002__auto__20160902__1307_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1migrations_1_10003__auto__20160922__1447_1_1_migration__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_class__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_class__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_class__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_class__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_session__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_session__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_session__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_session__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_student__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_student__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_student__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1models_1_1_student__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_class_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_class_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_class_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_class_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_session_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_session_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_session_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_session_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_student_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_student_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_student_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_student_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_token_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_token_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_token_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_token_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_user_serializer__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_user_serializer__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_user_serializer__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1serializers_1_1_user_serializer__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_index_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_index_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_index_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_index_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_class_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_current_user__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_current_user__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_current_user__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_current_user__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_detail__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_detail__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_detail__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_detail__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_session_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_sign_in_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_sign_in_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_sign_in_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_sign_in_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_student_list__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_student_list__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_student_list__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_student_list__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_tabulate_view__coll__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_tabulate_view__coll__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_tabulate_view__inherit__graph.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/classattendance_1_1views_1_1_tabulate_view__inherit__graph.md5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/dir_93cf3928243ad72cb4656587bf846eda.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/dir_bdc43e3c0b88c037f0ab670c0c7cac56.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/dir_e58947fddd32adcc57584a9bbb47cd1c.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/rtf/refman.rtf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <ignored path="Attendance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +623,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class_management/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1909">
+            <state relative-caret-position="136">
               <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
@@ -116,7 +679,6 @@
         <option value="$PROJECT_DIR$/signinsheet/views.py" />
         <option value="$PROJECT_DIR$/signinsheet/templates/signinsheet/signin.html" />
         <option value="$PROJECT_DIR$/attendance/templates/signinsheet/signin.html" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/attendance/templates/attendance/signin.html" />
         <option value="$PROJECT_DIR$/attendance/forms.py" />
         <option value="$PROJECT_DIR$/attendance/templates/attendance/class.html" />
@@ -131,6 +693,7 @@
         <option value="$PROJECT_DIR$/class_management/settings.py" />
         <option value="$PROJECT_DIR$/class_management/urls.py" />
         <option value="$PROJECT_DIR$/attendance/admin.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -171,7 +734,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,7 +762,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="documentation" />
+              <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -215,6 +777,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="class_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -234,6 +828,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -534,14 +1129,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38122606" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5714286" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42099568" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -572,29 +1167,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/attendance/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attendance/templates/attendance/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attendance/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -812,13 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -922,7 +1487,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class_management/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1909">
+        <state relative-caret-position="136">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
@@ -932,6 +1497,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/latex/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
       </provider>
