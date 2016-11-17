@@ -1,0 +1,127 @@
+\begin{theindex}
+
+  \item {A\+U\+T\+H\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+RS}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{8}
+  \item {attendance.\+admin}, \hyperpage{7}
+  \item {attendance.\+admin.\+Class\+Admin}, \hyperpage{14}
+  \item {attendance.\+admin.\+Session\+Admin}, \hyperpage{23}
+  \item {attendance.\+admin.\+Student\+Admin}, \hyperpage{26}
+  \item {attendance.\+apps.\+Signinsheet\+Config}, \hyperpage{25}
+  \item {attendance.\+forms.\+Choose\+Class\+Form}, \hyperpage{13}
+  \item {attendance.\+forms.\+Sign\+In\+Form}, \hyperpage{25}
+  \item {attendance.\+migrations.\+0001\+\_\+initial.\+Migration}, 
+		\hyperpage{21}
+  \item {attendance.\+migrations.\+0002\+\_\+auto\+\_\+20160902\+\_\+1307.\+Migration}, 
+		\hyperpage{20}
+  \item {attendance.\+migrations.\+0003\+\_\+auto\+\_\+20160922\+\_\+1447.\+Migration}, 
+		\hyperpage{19}
+  \item {attendance.\+models.\+Class}, \hyperpage{13}
+  \item {attendance.\+models.\+Class.\+Meta}, \hyperpage{18}
+  \item {attendance.\+models.\+Session}, \hyperpage{22}
+  \item {attendance.\+models.\+Student}, \hyperpage{26}
+  \item {attendance.\+serializers.\+Class\+Serializer}, \hyperpage{16}
+  \item {attendance.\+serializers.\+Class\+Serializer.\+Meta}, 
+		\hyperpage{17}
+  \item {attendance.\+serializers.\+Session\+Serializer}, 
+		\hyperpage{24}
+  \item {attendance.\+serializers.\+Session\+Serializer.\+Meta}, 
+		\hyperpage{17}
+  \item {attendance.\+serializers.\+Student\+Serializer}, 
+		\hyperpage{28}
+  \item {attendance.\+serializers.\+Student\+Serializer.\+Meta}, 
+		\hyperpage{18}
+  \item {attendance.\+serializers.\+Token\+Serializer}, \hyperpage{29}
+  \item {attendance.\+serializers.\+Token\+Serializer.\+Meta}, 
+		\hyperpage{19}
+  \item {attendance.\+serializers.\+User\+Serializer}, \hyperpage{29}
+  \item {attendance.\+serializers.\+User\+Serializer.\+Meta}, 
+		\hyperpage{18}
+  \item {attendance.\+views.\+Class\+Index\+View}, \hyperpage{14}
+  \item {attendance.\+views.\+Class\+List}, \hyperpage{15}
+  \item {attendance.\+views.\+Class\+View}, \hyperpage{16}
+  \item {attendance.\+views.\+Current\+User}, \hyperpage{17}
+  \item {attendance.\+views.\+Session\+Detail}, \hyperpage{23}
+  \item {attendance.\+views.\+Session\+List}, \hyperpage{24}
+  \item {attendance.\+views.\+Sign\+In\+View}, \hyperpage{25}
+  \item {attendance.\+views.\+Student\+List}, \hyperpage{27}
+  \item {attendance.\+views.\+Tabulate\+View}, \hyperpage{28}
+  \item {attendance\+::migrations\+::0001\+\_\+initial\+::\+Migration}
+    \subitem {dependencies}, \hyperpage{22}
+  \item {attendance\+::migrations\+::0002\+\_\+auto\+\_\+20160902\+\_\+1307\+::\+Migration}
+    \subitem {dependencies}, \hyperpage{21}
+    \subitem {operations}, \hyperpage{21}
+  \item {attendance\+::migrations\+::0003\+\_\+auto\+\_\+20160922\+\_\+1447\+::\+Migration}
+    \subitem {dependencies}, \hyperpage{20}
+    \subitem {operations}, \hyperpage{20}
+  \item {attendance\+::models\+::\+Class}
+    \subitem {S\+E\+M\+E\+S\+T\+E\+RS}, \hyperpage{14}
+
+  \indexspace
+
+  \item {class\+\_\+management.\+settings}, \hyperpage{7}
+  \item {class\+\_\+management.\+urls}, \hyperpage{10}
+  \item {class\+\_\+management.\+wsgi}, \hyperpage{11}
+  \item {class\+\_\+management\+::settings}
+    \subitem {A\+U\+T\+H\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+RS}, 
+		\hyperpage{8}
+    \subitem {D\+A\+T\+A\+B\+A\+S\+ES}, \hyperpage{8}
+    \subitem {I\+N\+S\+T\+A\+L\+L\+E\+D\+\_\+\+A\+P\+PS}, \hyperpage{8}
+    \subitem {M\+I\+D\+D\+L\+E\+W\+A\+RE}, \hyperpage{9}
+    \subitem {S\+T\+A\+T\+I\+C\+F\+I\+L\+E\+S\+\_\+\+D\+I\+RS}, 
+		\hyperpage{9}
+    \subitem {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+C\+E\+S\+S\+O\+RS}, 
+		\hyperpage{9}
+    \subitem {T\+E\+M\+P\+L\+A\+T\+ES}, \hyperpage{9}
+  \item {class\+\_\+management\+::urls}
+    \subitem {urlpatterns}, \hyperpage{10}
+
+  \indexspace
+
+  \item {D\+A\+T\+A\+B\+A\+S\+ES}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{8}
+  \item {dependencies}
+    \subitem {attendance\+::migrations\+::0001\+\_\+initial\+::\+Migration}, 
+		\hyperpage{22}
+    \subitem {attendance\+::migrations\+::0002\+\_\+auto\+\_\+20160902\+\_\+1307\+::\+Migration}, 
+		\hyperpage{21}
+    \subitem {attendance\+::migrations\+::0003\+\_\+auto\+\_\+20160922\+\_\+1447\+::\+Migration}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {I\+N\+S\+T\+A\+L\+L\+E\+D\+\_\+\+A\+P\+PS}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{8}
+
+  \indexspace
+
+  \item {M\+I\+D\+D\+L\+E\+W\+A\+RE}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{9}
+
+  \indexspace
+
+  \item {operations}
+    \subitem {attendance\+::migrations\+::0002\+\_\+auto\+\_\+20160902\+\_\+1307\+::\+Migration}, 
+		\hyperpage{21}
+    \subitem {attendance\+::migrations\+::0003\+\_\+auto\+\_\+20160922\+\_\+1447\+::\+Migration}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {S\+E\+M\+E\+S\+T\+E\+RS}
+    \subitem {attendance\+::models\+::\+Class}, \hyperpage{14}
+  \item {S\+T\+A\+T\+I\+C\+F\+I\+L\+E\+S\+\_\+\+D\+I\+RS}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{9}
+
+  \indexspace
+
+  \item {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+C\+E\+S\+S\+O\+RS}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{9}
+  \item {T\+E\+M\+P\+L\+A\+T\+ES}
+    \subitem {class\+\_\+management\+::settings}, \hyperpage{9}
+
+  \indexspace
+
+  \item {urlpatterns}
+    \subitem {class\+\_\+management\+::urls}, \hyperpage{10}
+
+\end{theindex}

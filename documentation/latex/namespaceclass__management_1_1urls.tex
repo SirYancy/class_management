@@ -1,0 +1,39 @@
+\hypertarget{namespaceclass__management_1_1urls}{}\section{class\+\_\+management.\+urls Namespace Reference}
+\label{namespaceclass__management_1_1urls}\index{class\+\_\+management.\+urls@{class\+\_\+management.\+urls}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries urlpatterns}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}URL Patterns for root
+
+Included are:
+* / -redirects to attendance/
+* attendance/ - Currently just attendance sign-in sheet
+* admin/ - Site admin page (requires login)
+* api-token-path/ - Get auth token (requires proper credential headers)
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceclass__management_1_1urls_ac6e0d8ce92ae187a6750ae8716501bb8}{}\label{namespaceclass__management_1_1urls_ac6e0d8ce92ae187a6750ae8716501bb8} 
+\index{class\+\_\+management\+::urls@{class\+\_\+management\+::urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!class\+\_\+management\+::urls@{class\+\_\+management\+::urls}}
+\subsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list class\+\_\+management.\+urls.\+urlpatterns}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     url(\textcolor{stringliteral}{r'^$'}, \textcolor{keyword}{lambda} r: HttpResponseRedirect(\textcolor{stringliteral}{'attendance/'})),
+3     url(\textcolor{stringliteral}{r'^attendance/'}, include(\textcolor{stringliteral}{'attendance.urls'}, namespace=\textcolor{stringliteral}{'attendance'})),
+4     url(\textcolor{stringliteral}{r'^admin/'}, admin.site.urls),
+5 ]
+\end{DoxyCode}
+
+
+Definition at line 15 of file urls.\+py.
+
