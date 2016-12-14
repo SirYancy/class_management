@@ -23,6 +23,7 @@ class Class(models.Model):
     year = models.IntegerField()
     class_id = models.CharField(max_length=12)
     name = models.CharField(max_length=30)
+    enrolled_students = models.ManyToManyField('Student', blank=True)
 
     class Meta:
         verbose_name_plural = "Classes"
@@ -38,7 +39,7 @@ class Student(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     student_id = models.CharField(max_length=6)
-    enrolled_class = models.ForeignKey(Class)
+    enrolled_classes = models.ManyToManyField(Class, blank=True)
 
     def __str__(self):
         return self.student_id + ' ' + self.last_name
