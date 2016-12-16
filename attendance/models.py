@@ -39,7 +39,6 @@ class Student(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     student_id = models.CharField(max_length=6)
-    enrolled_classes = models.ManyToManyField(Class, blank=True)
 
     def __str__(self):
         return self.student_id + ' ' + self.last_name
@@ -53,7 +52,7 @@ class Session(models.Model):
     password = models.CharField(max_length=16)
     session_class = models.ForeignKey(Class)
     students_present = models.ManyToManyField(Student, blank=True)
-    is_open = models.BooleanField(default=False)
+    is_open = models.BooleanField(default=True)
 
     def __str__(self):
         return self.date.strftime("%Y-%m-%d")

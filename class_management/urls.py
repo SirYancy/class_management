@@ -11,14 +11,14 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.http import HttpResponseRedirect
 
+from rest_framework.authtoken import views
 
 urlpatterns = [
     url(r'^$', lambda r: HttpResponseRedirect('attendance/')),
     url(r'^attendance/', include('attendance.urls', namespace='attendance')),
+    url(r'^api/', include('api.urls', namespace='api')),
     url(r'^admin/', admin.site.urls),
 ]
-
-from rest_framework.authtoken import views
 
 urlpatterns += [
     url(r'^api-token-auth/', views.obtain_auth_token),

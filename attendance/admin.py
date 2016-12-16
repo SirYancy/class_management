@@ -25,12 +25,12 @@ class ClassAdmin(admin.ModelAdmin):
     """
     fieldsets = (
         (None, {
-            'fields': [('class_id', 'name'), ('semester', 'year')]
+            'fields': [('class_id', 'name'), ('semester', 'year'), 'enrolled_students', ]
         }),
     )
     list_display = ('class_id', 'name',)
     list_filter = ['class_id', 'name']
-    search_fields = ['enrolled_class', 'last_name', 'student_id']
+    search_fields = ['enrolled_classes', 'last_name', 'student_id']
 
 
 class StudentAdmin(admin.ModelAdmin):
@@ -40,8 +40,7 @@ class StudentAdmin(admin.ModelAdmin):
     * Displayed in list are last_name, first_name, enrolled_class, and student_id
     * Can filter by enrolled_class
     """
-    list_display = ('last_name', 'first_name', 'enrolled_class', 'student_id')
-    list_filter = ['enrolled_class', ]
+    list_display = ('last_name', 'first_name', 'student_id')
 
 
 class SessionAdmin(admin.ModelAdmin):
