@@ -15,6 +15,36 @@
 </head>
 <body>
 
+<div class="container">
+    <div class="page-header">
+        <h1>Choose a class to review</h1>
+    </div>
+    {% if user.is_authenticated %}
+        <section class="well">
+            <h3>Today: {% now "SHORT_DATE_FORMAT" %}</h3>
+        <table class="table, table-responsive table-bordered" width="100%">
+            <thead>
+            <tr>
+                <th>Class Name</th>
+            </tr>
+            </thead>
+            {% for class in class_list %}
+                <tr>
+                <td><a href="#">{{ class.class_id }}</a></td>
+                <td>{{ class.name }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        </section>
+        <section>
+        <div class="btn-group" role="group" aria-label="...">
+            <a href="{% url 'instructor:instructor_create_class' %}"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Create Class</button></a>
+        </div>
+        </section>
+    {% endif %}
+</div>
+
 
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

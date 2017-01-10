@@ -17,9 +17,9 @@ class InstructorIndexView(generic.ListView):
 
 
 class CreateClassView(generic.CreateView):
-    template_name = ""  #TODO
+    template_name = "instructor/create_class.html"
     form_class = CreateClassForm
-    success_url = '/instructor/index.html'
+    success_url = '/instructor/'
 
     def form_invalid(self, form):
         return HttpResponse("Form is invalid...redo it.")
