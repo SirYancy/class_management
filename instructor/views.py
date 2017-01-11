@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.views import generic
 
 from attendance.models import Class, Session, Student
-from .forms import CreateClassForm
+from .forms import CreateClassForm, CreateStudentForm
 
 
 class InstructorIndexView(generic.ListView):
@@ -20,6 +20,17 @@ class InstructorIndexView(generic.ListView):
         return classes
 
 
+class StudentListView(generic.ListView):
+    template_name = "instructor/student_list.html"
+    context_object_name = 'students'
+
+    def get_queryset(self):
+        students = None
+        if self.request.user.is_authenticated():
+            students = Student.objects.all().order_by('last_name')
+        return students
+
+
 class CreateClassView(generic.CreateView):
     template_name = "instructor/create_class.html"
     form_class = CreateClassForm
@@ -27,6 +38,15 @@ class CreateClassView(generic.CreateView):
 
     def form_invalid(self, form):
         return HttpResponse("Form is invalid...redo it.")
+
+
+class CreateStudentView(generic.CreateView):
+    template_name = "instructor/create_student.html"
+    form_class = CreateStudentForm
+    success_url = '/instructor/create_student'
+
+    def form_invalid(self, form):
+        return HttpResponse("Form is invalid")
 
 
 class ClassDetailView(generic.DetailView):
