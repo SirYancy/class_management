@@ -19,39 +19,60 @@
         </div>
 
         {% if user.is_authenticated %}
-            <div class="well">
-                {% if class_detail %}
-                    <h3>Today: {% now "SHORT_DATE_FORMAT" %}</h3>
-                    <h1>{{ class_detail.class_id }} {{ class_detail.name }}</h1>
+            <section>
+                <div class="well">
+                    {% if class_detail %}
+                        <h3>Today: {% now "SHORT_DATE_FORMAT" %}</h3>
+                        <h1>{{ class_detail.class_id }} {{ class_detail.name }}</h1>
 
-                    <table class="table table-bordered table-condensed table-hover">
-                        <thead>
-                        <tr>
-                            <td>Student</td>
-                            {% for session in sessions %}
-                                    <td>{{ session.date }}</td>
-                            {% endfor %}
-                        </tr>
-                        </thead>
-                        {% for student in class_detail.enrolled_students.all %}
-
+                        <table class="table table-bordered table-condensed table-hover">
+                            <thead>
                             <tr>
-                                <td>{{ student.last_name }}, {{ student.first_name }}</td>
+                                <td>Student</td>
                                 {% for session in sessions %}
-                                    {% if student in session.students_present.all %}
-                                        <td>P</td>
-                                    {% else %}
-                                        <td>A</td>
-                                    {% endif %}
+                                    <td>{{ session.date }}</td>
                                 {% endfor %}
                             </tr>
+                            </thead>
+                            {% for student in class_detail.enrolled_students.all %}
 
-                        {% endfor %}
+                                <tr>
+                                    <td>{{ student.last_name }}, {{ student.first_name }}</td>
+                                    {% for session in sessions %}
+                                        {% if student in session.students_present.all %}
+                                            <td>P</td>
+                                        {% else %}
+                                            <td>A</td>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tr>
 
-                    </table>
-                {% endif %}
+                            {% endfor %}
 
-            </div>
+                        </table>
+
+
+                    {% endif %}
+
+                </div>
+            </section>
+            <section>
+                <a href="{% url 'instructor:instructor_index' %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-home"></span> Index
+                    </button>
+                </a>
+                <a href="{% url 'instructor:instructor_create_session' class_detail.id %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-bell"></span> Add Session
+                    </button>
+                </a>
+                <a href="{% url 'instructor:enroll_students' class_detail.id %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-registration-mark"></span> Enroll students
+                    </button>
+                </a>
+            </section>
         {% endif %}
 
     </div>
