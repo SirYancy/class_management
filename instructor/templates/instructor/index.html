@@ -30,7 +30,7 @@
             </thead>
             {% for class in class_list %}
                 <tr>
-                <td><a href="#">{{ class.class_id }}</a></td>
+                <td><a href="{% url 'instructor:class_detail' class.id %}">{{ class.class_id }}</a></td>
                 <td>{{ class.name }}</td>
                 </tr>
             {% endfor %}
@@ -44,6 +44,14 @@
         </section>
     {% endif %}
 </div>
+
+<footer class="panel-footer">
+    <div class="container">
+        {% if user.is_authenticated %}
+            <a href="{% url 'instructor:logout' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-log-out"></span> Logout</button></a>
+        {% endif %}
+    </div>
+</footer>
 
 
 <!-- JQuery -->

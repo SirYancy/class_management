@@ -14,7 +14,7 @@ from django.http import HttpResponseRedirect
 from rest_framework.authtoken import views
 
 urlpatterns = [
-    url(r'^$', lambda r: HttpResponseRedirect('instructor/')),
+    url(r'^$', lambda r: HttpResponseRedirect('attendance/')),
     url(r'^attendance/', include('attendance.urls', namespace='attendance')),
     url(r'^api/', include('api.urls', namespace='api')),
     url(r'^instructor/', include('instructor.urls', namespace='instructor')),
