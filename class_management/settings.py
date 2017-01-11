@@ -36,6 +36,8 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'widget_tweaks',
     'attendance',
+    'instructor',
+    'api',
     'rest_framework',
     'rest_framework.authtoken',
     'django.contrib.admin',

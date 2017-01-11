@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static i18n widget_tweaks %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Data</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Attendance tables</h1>
+        </div>
+
+        {% if user.is_authenticated %}
+            <section>
+                <div class="well">
+                    {% if class_detail %}
+                        <h3>Today: {% now "SHORT_DATE_FORMAT" %}</h3>
+                        <h1>{{ class_detail.class_id }} {{ class_detail.name }}</h1>
+
+                        <table class="table table-bordered table-condensed table-hover">
+                            <thead>
+                            <tr>
+                                <td>Student</td>
+                                {% for session in sessions %}
+                                    {% if session.is_open %}
+                                        <td style="background-color: gold">{{ session.date }}</td>
+                                    {% else %}
+                                        <td>{{ session.date }}</td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
+                            </thead>
+                            {% for student in class_detail.enrolled_students.all %}
+
+                                <tr>
+                                    <td>{{ student.last_name }}, {{ student.first_name }}</td>
+                                    {% for session in sessions %}
+                                        {% if student in session.students_present.all %}
+                                            <td>P</td>
+                                        {% else %}
+                                            <td>A</td>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tr>
+
+                            {% endfor %}
+
+                        </table>
+
+
+                    {% endif %}
+
+                </div>
+            </section>
+            <section>
+                <a href="{% url 'instructor:instructor_index' %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-home"></span> Index
+                    </button>
+                </a>
+                <a href="{% url 'instructor:instructor_create_session' class_detail.id %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-bell"></span> Add Session
+                    </button>
+                </a>
+                <a href="{% url 'instructor:close_sessions' class_detail.id %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-remove"></span> Close Sessions
+                    </button>
+                </a>
+                <a href="{% url 'instructor:enroll_students' class_detail.id %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-registration-mark"></span> Enroll students
+                    </button>
+                </a>
+            </section>
+        {% endif %}
+
+    </div>
+</head>
+<body>
+
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

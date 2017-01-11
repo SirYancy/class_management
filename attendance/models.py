@@ -23,9 +23,10 @@ class Class(models.Model):
     year = models.IntegerField()
     class_id = models.CharField(max_length=12)
     name = models.CharField(max_length=30)
+    enrolled_students = models.ManyToManyField('Student', blank=True)
 
     class Meta:
-        verbose_name_plural="Classes"
+        verbose_name_plural = "Classes"
 
     def __str__(self):
         return self.class_id + ' ' + str((self.SEMESTERS[self.semester])[1]) + ' ' + str(self.year)
@@ -37,8 +38,7 @@ class Student(models.Model):
     """
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    student_id = models.CharField(max_length=6)
-    enrolled_class = models.ForeignKey(Class)
+    student_id = models.CharField(max_length=6, unique=True)
 
     def __str__(self):
         return self.student_id + ' ' + self.last_name
@@ -52,7 +52,7 @@ class Session(models.Model):
     password = models.CharField(max_length=16)
     session_class = models.ForeignKey(Class)
     students_present = models.ManyToManyField(Student, blank=True)
-    is_open = models.BooleanField(default=False)
+    is_open = models.BooleanField(default=True)
 
     def __str__(self):
         return self.date.strftime("%Y-%m-%d")

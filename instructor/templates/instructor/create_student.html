@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static i18n widget_tweaks %}
-<head>
 
+<head>
     <meta charset="UTF-8">
-    <title>Choose Your Class</title>
+    <title>Create a Student</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,29 +14,30 @@
 
 </head>
 <body>
+
 <div class="container">
     <div class="page-header">
-        <h3>Select your class</h3>
+        <h1>Create a Student</h1>
     </div>
-    <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
 
-    <form action="{% url 'attendance:choose_class' %}" method="post">
-        {%  csrf_token %}
-        <div class="form-group">
-            {% for field in form %}
-                <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
-                {{ field|attr:"class:form-control" }}
-            {% endfor %}
-        </div>
-        <input type="submit" value="Submit" class="btn btn-primary" />
-    </form>
-
+    {% if user.is_authenticated %}
+        <section class="well">
+            <form action="" method="post">
+                {% csrf_token %}
+                <table>
+                    {{ form.as_table}}
+                </table>
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    {% endif %}
 </div>
 
 <footer class="panel-footer">
-    <div class="container">
-        <a href="{% url 'instructor:login' %}"><button class="btn btn-primary">Instructor</button></a>
-    </div>
+    {% if user.is_authenticated %}
+        <a href="{% url 'instructor:instructor_index' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-step-backward"></span> Back to Index</button></a>
+        <a href="{% url 'instructor:instructor_student_list' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-education"></span> Student List</button></a>
+    {% endif %}
 </footer>
 
 <!-- JQuery -->

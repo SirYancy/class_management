@@ -1,23 +1,15 @@
 import csv
+from datetime import date
 
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render_to_response, render
-from django.template import RequestContext
+from django.shortcuts import render
 from django.views import generic
 from django.views.generic.edit import FormView
-from datetime import date
 
-from rest_framework import generics
-from rest_framework import permissions
-from rest_framework.authentication import TokenAuthentication
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
-from .models import Class, Student, Session
 from .forms import SignInForm, ChooseClassForm
-from .serializers import ClassSerializer, TokenSerializer, StudentSerializer, SessionSerializer, UserSerializer
+from .models import Class, Student, Session
 
 
 class ClassView(FormView):
@@ -72,8 +64,9 @@ class TabulateView(generic.DetailView):
 def output_csv(request, class_id):
     """
     Outputs selected class to csv file
-    :param request:
-    :return:
+    :param class_id: id number of class
+    :param request: request object
+    :return: an http response
     """
     my_class = Class.objects.get(id=class_id)
     disp = 'attachment; filename="attendance_data' + my_class.class_id + '.csv"'
@@ -127,93 +120,3 @@ def verify(request):
             return HttpResponse("Thank you, %s" % student.first_name)
         else:
             return HttpResponse("Password, Student ID, or Class incorrect")
-
-
-def user_login(request):
-    """
-    Login request view
-    :param request:
-    :return:
-    """
-
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(username=username, password=password)
-        if user:
-            if user.is_active:
-                login(request, user)
-                return HttpResponseRedirect('/attendance/classes/')
-            else:
-                return HttpResponse('Your account is disabled')
-        else:
-            print('Invalid Login')
-            return HttpResponse('Invalid login details')
-    else:
-        return render(request, 'attendance/login.html')
-
-
-@login_required
-def user_logout(request):
-    """
-    Logs current client out
-    :param request:
-    :return:
-    """
-    logout(request)
-    return HttpResponseRedirect('/attendance/')
-
-
-# <-------------------- REST API VIEWS ---------------------->
-class StudentList(generics.ListAPIView):
-    """
-    List all Students
-    """
-    model = Student
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
-    queryset = Student.objects.all()
-    serializer_class = StudentSerializer
-    ordering_fields = ('last_name',)
-    ordering = ('last_name',)
-
-    def get_queryset(self):
-        key = self.kwargs['class_key']
-        c = Class.objects.get(pk=key)
-        return Student.objects.filter(enrolled_class=c).order_by('-last_name')
-
-
-class SessionList(generics.ListCreateAPIView):
-    """
-    List all Sessions
-    """
-    model = Session
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
-    serializer_class = SessionSerializer
-    ordering_fields = ('date',)
-    ordering = ('date',)
-
-    def get_queryset(self):
-        key = self.kwargs['class_key']
-        c = Class.objects.get(pk=key)
-        return Session.objects.filter(session_class=c).order_by('-date')
-
-
-class ClassList(generics.ListCreateAPIView):
-    """
-    List all Classes
-    """
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
-    queryset = Class.objects.all()
-    serializer_class = ClassSerializer
-
-
-class CurrentUser(APIView):
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (permissions.IsAuthenticated,)
-
-    def get(self, request):
-        serializer = UserSerializer(request.user)
-        return Response(serializer.data)
