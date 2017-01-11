@@ -89,6 +89,22 @@ class ClassDetailView(generic.DetailView):
         return context
 
 
+def close_sessions(request, class_id):
+    """
+    Closes all open sessions
+    :param request:
+    :return: HttpResponseRedirect
+    """
+    if not request.user.is_authenticated:
+        HttpResponse("You are not allowed to do that")
+    my_class = Class.objects.get(id=class_id)
+    my_sessions = Session.objects.filter(session_class=my_class)
+    for session in my_sessions:
+        session.is_open = False
+        session.save()
+    return HttpResponseRedirect('/instructor/class_detail/%i' % my_class.id)
+
+
 def user_login(request):
     """
     Login request view

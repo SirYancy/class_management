@@ -64,8 +64,9 @@ class TabulateView(generic.DetailView):
 def output_csv(request, class_id):
     """
     Outputs selected class to csv file
-    :param request:
-    :return:
+    :param class_id: id number of class
+    :param request: request object
+    :return: an http response
     """
     my_class = Class.objects.get(id=class_id)
     disp = 'attachment; filename="attendance_data' + my_class.class_id + '.csv"'

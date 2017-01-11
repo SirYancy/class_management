@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^class_detail/(?P<pk>[0-9]+)$', views.ClassDetailView.as_view(), name='class_detail'),
     url(r'^create_session/(?P<pk>[0-9]+)$', views.CreateSessionView.as_view(), name='instructor_create_session'),
     url(r'^enroll_students/(?P<pk>[0-9]+)$', views.EnrollStudentsView.as_view(), name='enroll_students'),
+    url(r'^close_sessions/(?P<class_id>[0-9]+)$', views.close_sessions, name='close_sessions'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/&', views.user_logout, name='logout'),
 ]

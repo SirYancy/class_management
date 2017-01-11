@@ -30,7 +30,11 @@
                             <tr>
                                 <td>Student</td>
                                 {% for session in sessions %}
-                                    <td>{{ session.date }}</td>
+                                    {% if session.is_open %}
+                                        <td style="background-color: gold">{{ session.date }}</td>
+                                    {% else %}
+                                        <td>{{ session.date }}</td>
+                                    {% endif %}
                                 {% endfor %}
                             </tr>
                             </thead>
@@ -65,6 +69,11 @@
                 <a href="{% url 'instructor:instructor_create_session' class_detail.id %}">
                     <button class="btn btn-primary">
                         <span class="glyphicon glyphicon-bell"></span> Add Session
+                    </button>
+                </a>
+                <a href="{% url 'instructor:close_sessions' class_detail.id %}">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-remove"></span> Close Sessions
                     </button>
                 </a>
                 <a href="{% url 'instructor:enroll_students' class_detail.id %}">
