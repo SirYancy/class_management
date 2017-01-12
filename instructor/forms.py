@@ -1,5 +1,6 @@
 from django import forms
-from django.forms import ModelForm
+from django.contrib.admin.widgets import AdminDateWidget
+from django.forms import ModelForm, DateInput
 
 from attendance.models import Class, Student, Session
 
@@ -32,3 +33,6 @@ class CreateSessionForm(ModelForm):
     class Meta:
         model = Session
         fields = ['date', 'session_class', 'password']
+        widgets = {
+            'date': AdminDateWidget(attrs={'class': 'datepicker',}),
+        }
