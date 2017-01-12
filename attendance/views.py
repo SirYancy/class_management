@@ -27,75 +27,6 @@ class SignInView(FormView):
     form_class = SignInForm
 
 
-class ClassIndexView(generic.ListView):
-    """
-    Root View for classes
-    """
-    template_name = 'attendance/class_index.html'
-    context_object_name = 'class_index'
-
-    def get_queryset(self):
-        classes = None
-        if self.request.user.is_authenticated():
-            classes = Class.objects.all()
-        return classes
-
-
-class TabulateView(generic.DetailView):
-    """
-    Tabulates Attendance Data for easy copying.  Next will be a rest interface to download it as a csv
-    """
-    template_name = 'attendance/tabulate.html'
-    context_object_name = 'attendance_data'
-    model = Class
-
-    def get_context_data(self, **kwargs):
-        context = super(TabulateView, self).get_context_data(**kwargs)
-        if self.request.user.is_authenticated():
-            my_class = self.get_object()
-            my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
-            my_students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
-            context['sessions'] = my_sessions
-            context['students'] = my_students
-
-        return context
-
-
-def output_csv(request, class_id):
-    """
-    Outputs selected class to csv file
-    :param class_id: id number of class
-    :param request: request object
-    :return: an http response
-    """
-    my_class = Class.objects.get(id=class_id)
-    disp = 'attachment; filename="attendance_data' + my_class.class_id + '.csv"'
-    response = HttpResponse(content_type='text/csv')
-    response['Content-Disposition'] = disp
-
-    my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
-    my_students = Student.objects.filter(enrolled_class=my_class).order_by('last_name')
-
-    writer = csv.writer(response)
-    title_row = [my_class.class_id + " " + my_class.name]
-    writer.writerow(title_row)
-    header_row = ["Name"]
-    for session in my_sessions:
-        header_row.append(session.date)
-    writer.writerow(header_row)
-
-    for student in my_students:
-        data_row = [student.last_name + ", " + student.first_name]
-        for session in my_sessions:
-            if student.session_set.filter(id=session.id).exists():
-                data_row.append("P")
-            else:
-                data_row.append("A")
-        writer.writerow(data_row)
-
-    return response
-
-
 def verify(request):
     """
     Verifies student id, class, and password. If it all matches up, the student is marked present for the day.
@@ -104,19 +35,24 @@ def verify(request):
     """
     if request.GET:
         today = date.today()
-        student = Student.objects.get(student_id=request.GET.get('student_id'))
+        student = None
+        try:
+            student = Student.objects.get(student_id=request.GET.get('student_id'))
+        except Student.DoesNotExist:
+            return HttpResponse("Student Does Not Exist")
+
         current_class = Class.objects.get(class_id=request.GET.get('class_id'))
         class_id = current_class.id
         sessions = Session.objects.filter(session_class=class_id).filter(date__exact=today)
         s = sessions[0]
 
         if s.students_present.filter(id=student.id).exists():
-            return HttpResponse("You are already signed in")
+            return HttpResponse("<h3>You are already signed in</h3>")
         elif not s.is_open:
             return HttpResponse("This session is closed for signin.")
-        elif student.enrolled_class == current_class and request.GET.get('today_password') == s.password:
+        elif student in current_class.enrolled_students.all() and request.GET.get('today_password') == s.password:
             s.students_present.add(student)
             s.save()
-            return HttpResponse("Thank you, %s" % student.first_name)
+            return HttpResponse("<h3>Thank you, %s</h3>" % student.first_name)
         else:
-            return HttpResponse("Password, Student ID, or Class incorrect")
+            return HttpResponse("<h3>Password or Class incorrect</h3>")

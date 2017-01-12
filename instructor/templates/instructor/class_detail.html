@@ -61,25 +61,20 @@
                 </div>
             </section>
             <section>
-                <a href="{% url 'instructor:instructor_index' %}">
-                    <button class="btn btn-primary">
-                        <span class="glyphicon glyphicon-home"></span> Index
-                    </button>
+                <a href="{% url 'instructor:instructor_index' %}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-home"></span> Index
                 </a>
-                <a href="{% url 'instructor:instructor_create_session' class_detail.id %}">
-                    <button class="btn btn-primary">
-                        <span class="glyphicon glyphicon-bell"></span> Add Session
-                    </button>
+                <a href="{% url 'instructor:instructor_create_session' class_detail.id %}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-bell"></span> Add Session
                 </a>
-                <a href="{% url 'instructor:close_sessions' class_detail.id %}">
-                    <button class="btn btn-primary">
-                        <span class="glyphicon glyphicon-remove"></span> Close Sessions
-                    </button>
+                <a href="{% url 'instructor:close_sessions' class_detail.id %}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-remove"></span> Close Sessions
                 </a>
-                <a href="{% url 'instructor:enroll_students' class_detail.id %}">
-                    <button class="btn btn-primary">
-                        <span class="glyphicon glyphicon-registration-mark"></span> Enroll students
-                    </button>
+                <a href="{% url 'instructor:enroll_students' class_detail.id %}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-registration-mark"></span> Enroll students
+                </a>
+                <a href="{% url 'instructor:csv' class_detail.id %}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-download-alt"></span> Download CSV
                 </a>
             </section>
         {% endif %}

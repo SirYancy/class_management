@@ -1,3 +1,5 @@
+import csv
+
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -87,6 +89,41 @@ class ClassDetailView(generic.DetailView):
             my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
             context['sessions'] = my_sessions
         return context
+
+
+def output_csv(request, class_id):
+    """
+    Outputs selected class to csv file
+    :param class_id: id number of class
+    :param request: request object
+    :return: a csv file attached to http response
+    """
+    my_class = Class.objects.get(id=class_id)
+    disp = 'attachment; filename="attendance_data_' + my_class.class_id + '.csv"'
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = disp
+
+    my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
+    my_students = my_class.enrolled_students.order_by('last_name')
+
+    writer = csv.writer(response)
+    title_row = [my_class.class_id + " " + my_class.name]
+    writer.writerow(title_row)
+    header_row = ["Name"]
+    for session in my_sessions:
+        header_row.append(session.date)
+    writer.writerow(header_row)
+
+    for student in my_students:
+        data_row = [student.last_name + ", " + student.first_name]
+        for session in my_sessions:
+            if student.session_set.filter(id=session.id).exists():
+                data_row.append("P")
+            else:
+                data_row.append("A")
+        writer.writerow(data_row)
+
+    return response
 
 
 def close_sessions(request, class_id):
