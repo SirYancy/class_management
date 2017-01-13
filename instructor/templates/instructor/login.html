@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -12,21 +13,30 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{% static "instructor/stylesheets/main.css" %}" type="text/css" />
 
 </head>
 <body>
-    <div class="container">
-        <h1>Please login:</h1>
-        <p>Note: If you are a student, this is not where you login. I don't even know how you got here.</p>
-        <form id="login_form" method="post" action="{% url 'instructor:login' %}">
-            <div class="form-group">
-                {% csrf_token %}
-                <label class="control-label" for="username">Username:</label><input type="text" name="username" id="username" value="" class="form-control"/>
-                <label class="control-label" for="password">Password:</label><input type="password" name="password" id="password" value="" class="form-control"/>
-                <input name="submit" type="submit" class="btn btn-primary" value="Submit" />
+<div class="container">
+    <div class="page-header">
+        <div class="row row-table">
+            <div class="vcenter">
+                <div class="col-lg-2 col-sm-6"><img class="img-responsive" src="{% static "instructor/images/stem_logo.jpg" %}"/></div>
+                <div class="col-lg-10 col-sm-6"><h1>Class management</h1></div>
             </div>
-        </form>
+        </div>
     </div>
+    <p>Note: If you are a student, this is <strong><em>not </em></strong>where you sign in.</p>
+    <form id="login_form" method="post" action="{% url 'instructor:login' %}">
+        <legend>Login</legend>
+        <div class="form-group">
+            {% csrf_token %}
+            <label class="control-label" for="username">Username:</label><input type="text" name="username" id="username" value="" class="form-control"/>
+            <label class="control-label" for="password">Password:</label><input type="password" name="password" id="password" value="" class="form-control"/>
+            <input name="submit" type="submit" class="btn btn-primary" value="Submit" />
+        </div>
+    </form>
+</div>
 
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

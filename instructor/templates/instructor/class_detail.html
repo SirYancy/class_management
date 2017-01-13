@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance Data</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -12,10 +13,17 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{% static "instructor/stylesheets/main.css" %}" type="text/css" />
+
     <div class="container">
 
         <div class="page-header">
-            <h1>Attendance tables</h1>
+            <div class="row row-table">
+                <div class="vcenter">
+                    <div class="col-lg-2 col-sm-6"><img class="img-responsive" src="{% static "instructor/images/stem_logo.jpg" %}"/></div>
+                    <div class="col-lg-10 col-sm-6"><h1>Class management</h1></div>
+                </div>
+            </div>
         </div>
 
         {% if user.is_authenticated %}
@@ -23,9 +31,9 @@
                 <div class="well">
                     {% if class_detail %}
                         <h3>Today: {% now "SHORT_DATE_FORMAT" %}</h3>
-                        <h1>{{ class_detail.class_id }} {{ class_detail.name }}</h1>
 
                         <table class="table table-bordered table-condensed table-hover">
+                            <legend>{{ class_detail.class_id }} {{ class_detail.name }}</legend>
                             <thead>
                             <tr>
                                 <td>Student</td>

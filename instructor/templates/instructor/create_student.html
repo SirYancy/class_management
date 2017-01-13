@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a Student</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -12,18 +13,26 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{% static "instructor/stylesheets/main.css" %}" type="text/css" />
+
 </head>
 <body>
 
 <div class="container">
     <div class="page-header">
-        <h1>Create a Student</h1>
+        <div class="row row-table">
+            <div class="vcenter">
+                <div class="col-lg-2 col-sm-6"><img class="img-responsive" src="{% static "instructor/images/stem_logo.jpg" %}"/></div>
+                <div class="col-lg-10 col-sm-6"><h1>Class management</h1></div>
+            </div>
+        </div>
     </div>
 
     {% if user.is_authenticated %}
         <section class="well">
             <form action="" method="post">
                 {% csrf_token %}
+                <legend>Create a Student</legend>
                 <table>
                     {{ form.as_table}}
                 </table>
@@ -33,12 +42,14 @@
     {% endif %}
 </div>
 
-<footer class="panel-footer">
-    {% if user.is_authenticated %}
-        <a href="{% url 'instructor:instructor_index' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-step-backward"></span> Back to Index</button></a>
-        <a href="{% url 'instructor:instructor_student_list' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-education"></span> Student List</button></a>
-    {% endif %}
-</footer>
+<div class="container">
+    <footer class="panel-footer">
+        {% if user.is_authenticated %}
+            <a href="{% url 'instructor:instructor_index' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-step-backward"></span> Back to Index</button></a>
+            <a href="{% url 'instructor:instructor_student_list' %}"><button class="btn btn-primary"><span class="glyphicon glyphicon-education"></span> Student List</button></a>
+        {% endif %}
+    </footer>
+</div>
 
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

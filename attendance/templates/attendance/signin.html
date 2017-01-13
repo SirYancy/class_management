@@ -12,13 +12,21 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{% static "attendance/stylesheets/main.css" %}" type="text/css" />
 
 </head>
 <body>
 
 <div class="container">
-    <h3>Please Sign In</h3>
-    <strong>{{ request.GET.class }}</strong><br />
+    <div class="page-header">
+        <div class="row row-table">
+            <div class="vcenter">
+                <div class="col-lg-2 col-sm-6"><img class="img-responsive" src="{% static "attendance/images/stem_logo.jpg" %}"/></div>
+                <div class="col-lg-10 col-sm-6"><h1>{{ request.GET.class }}</h1></div>
+            </div>
+        </div>
+    </div>
+
     <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
 
     <form action="{% url 'attendance:verify' %}?class={{ request.GET.class }}" method="get">

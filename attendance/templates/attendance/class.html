@@ -12,16 +12,24 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="{% static "attendance/stylesheets/main.css" %}" type="text/css" />
+
 </head>
 <body>
 <div class="container">
     <div class="page-header">
-        <h3>Select your class</h3>
+        <div class="row row-table">
+            <div class="vcenter">
+                <div class="col-lg-2 col-sm-6"><img class="img-responsive" src="{% static "attendance/images/stem_logo.jpg" %}"/></div>
+                <div class="col-lg-10 col-sm-6"><h1>Class management</h1></div>
+            </div>
+        </div>
     </div>
     <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
 
     <form action="{% url 'attendance:choose_class' %}" method="post">
         {%  csrf_token %}
+        <legend>Choose your class</legend>a
         <div class="form-group">
             {% for field in form %}
                 <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>

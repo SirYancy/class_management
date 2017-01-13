@@ -1,0 +1,8 @@
+.row-table {
+    display:table;
+    width: 100%;
+}
+.vcenter {
+    display:table-cell;
+    vertical-align: middle;
+}
