@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -21,26 +22,31 @@
     <div class="page-header">
         <div class="row row-table">
             <div class="vcenter">
-                <div class="col-lg-2 col-sm-6"><img class="img-responsive" src="{% static "attendance/images/stem_logo.jpg" %}"/></div>
-                <div class="col-lg-10 col-sm-6"><h1>{{ request.GET.class }}</h1></div>
+                <div class="col-lg-2 col-md-3 col-sm-6"><img class="img-responsive" src="{% static "attendance/images/stem_logo.jpg" %}"/></div>
+                <div class="col-lg-10 col-md-9 col-sm-6"><h1>{{ request.GET.class }}</h1></div>
             </div>
         </div>
     </div>
+    <div class="row">
+    <div class="col-lg-4 col-md-3"></div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
 
-    <strong>{% now "SHORT_DATE_FORMAT" %}</strong>
-
-    <form action="{% url 'attendance:verify' %}?class={{ request.GET.class }}" method="get">
-        {%  csrf_token %}
-        <div class="form-group">
-            <label class="control-label" for="class_id">Class</label>
-            <input type="text" class="form-control" name="class_id" id="class_id" required readonly value="{{ request.GET.class }}"/>
-            {% for field in form %}
-                <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
-                {{ field|attr:"class:form-control" }}
-            {% endfor %}
-        </div>
-        <input type="submit" value="Submit" class="btn btn-primary" />
-    </form>
+        <form action="{% url 'attendance:verify' %}?class={{ request.GET.class }}" method="get">
+            {%  csrf_token %}
+            <div class="form-group">
+                <label class="control-label" for="class_id">Class</label>
+                <input type="text" class="form-control" name="class_id" id="class_id" required readonly value="{{ request.GET.class }}"/>
+                {% for field in form %}
+                    <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
+                    {{ field|attr:"class:form-control" }}
+                {% endfor %}
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </form>
+    </div>
+    <div class="col-lg-4 col-md-3"></div>
+    </div>
 </div>
 
 <!-- JQuery -->

@@ -4,6 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Your Class</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -29,7 +30,7 @@
 
     <form action="{% url 'attendance:choose_class' %}" method="post">
         {%  csrf_token %}
-        <legend>Choose your class</legend>a
+        <legend>Choose your class</legend>
         <div class="form-group">
             {% for field in form %}
                 <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
@@ -41,11 +42,11 @@
 
 </div>
 
-<footer class="panel-footer">
-    <div class="container">
+<div class="container">
+    <footer class="panel-footer">
         <a href="{% url 'instructor:login' %}"><button class="btn btn-primary">Instructor</button></a>
-    </div>
-</footer>
+    </footer>
+</div>
 
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
