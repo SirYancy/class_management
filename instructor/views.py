@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.views import generic
 
 from attendance.models import Class, Session, Student
@@ -42,20 +42,22 @@ class StudentListView(generic.ListView):
 
 class CreateClassView(generic.CreateView):
     template_name = "instructor/create_class.html"
-    form_class = CreateClassForm
     success_url = '/instructor/index/'
 
     def form_invalid(self, form):
         return HttpResponse("Form is invalid...redo it.")
 
 
-class CreateSessionView(generic.CreateView):
-    template_name = "instructor/create_session.html"
-    form_class = CreateSessionForm
-    success_url = '/instructor/index'
-
-    def form_invalid(self, form):
-        return HttpResponse("Form is invalid")
+def create_session(request, pk):
+    if request.method == 'POST':
+        form = CreateSessionForm(request.POST)
+        if form.is_valid():
+            s = form.save()
+            return HttpResponseRedirect('/instructor/class_detail/%i' % s.id)
+    else:
+        obj = Class.objects.get(id=pk)
+        form = CreateSessionForm(initial={'session_class': obj.id})
+        return render(request, "instructor/create_session.html", {"form": form})
 
 
 class EnrollStudentsView(generic.UpdateView):
@@ -104,7 +106,7 @@ def output_csv(request, class_id):
     response['Content-Disposition'] = disp
 
     my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
-    my_students = my_class.enrolled_students.order_by('last_name')
+    my_students = my_class.enrolled_students.order_by('last_name', 'first_name')
 
     writer = csv.writer(response)
     title_row = [my_class.class_id + " " + my_class.name]
