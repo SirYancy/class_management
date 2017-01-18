@@ -35,7 +35,6 @@ def verify(request):
     """
     if request.GET:
         today = date.today()
-        student = None
         try:
             student = Student.objects.get(student_id=request.GET.get('student_id'))
         except Student.DoesNotExist:

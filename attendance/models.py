@@ -61,7 +61,6 @@ class Session(models.Model):
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     """
-
     :param sender:
     :param instance:
     :param created:

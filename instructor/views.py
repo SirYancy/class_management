@@ -4,11 +4,11 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 from django.views import generic
 
 from attendance.models import Class, Session, Student
-from .forms import CreateClassForm, CreateStudentForm, EnrollStudentsForm, CreateSessionForm
+from .forms import CreateClassForm, CreateStudentForm, EnrollStudentsForm, CreateSessionForm, UpdateSessionForm
 
 
 class InstructorIndexView(generic.ListView):
@@ -42,18 +42,20 @@ class StudentListView(generic.ListView):
 
 class CreateClassView(generic.CreateView):
     template_name = "instructor/create_class.html"
+    form_class = CreateClassForm
     success_url = '/instructor/index/'
 
     def form_invalid(self, form):
         return HttpResponse("Form is invalid...redo it.")
 
 
+@login_required
 def create_session(request, pk):
     if request.method == 'POST':
         form = CreateSessionForm(request.POST)
         if form.is_valid():
             s = form.save()
-            return HttpResponseRedirect('/instructor/class_detail/%i' % s.id)
+            return HttpResponseRedirect('/instructor/class_detail/%i' % s.session_class.id)
     else:
         obj = Class.objects.get(id=pk)
         form = CreateSessionForm(initial={'session_class': obj.id})
@@ -68,6 +70,34 @@ class EnrollStudentsView(generic.UpdateView):
     def get_object(self, queryset=None):
         obj = Class.objects.get(id=self.kwargs['pk'])
         return obj
+
+
+def update_session(request, pk):
+    if request.method == 'POST':
+        form = UpdateSessionForm(request.POST)
+        if form.is_valid():
+            s = Session.objects.get(id=pk)
+            s.students_present = form.students_present
+            s.save()
+            return HttpResponseRedirect('/instructor/class_detail%i' % s.session_class.id)
+    else:
+        s = Session.objects.get(id=pk)
+        form = UpdateSessionForm(initial={'students_present': s.students_present, 'session': s});
+        return render(request, "instructor/update_session.html", {"form": form, "session": s})
+
+
+class UpdateSessionView(generic.UpdateView):
+    template_name = 'instructor/update_session.html'
+    form_class = UpdateSessionForm
+    context_object_name = 'session'
+
+    def get_object(self, queryset=None):
+        obj = Session.objects.get(id=self.kwargs['pk'])
+        return obj
+
+    def form_valid(self, form):
+        s = form.save()
+        return HttpResponseRedirect('/instructor/class_detail/%i' % s.session_class.id)
 
 
 class CreateStudentView(generic.CreateView):

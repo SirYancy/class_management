@@ -34,5 +34,21 @@ class CreateSessionForm(ModelForm):
         model = Session
         fields = ['date', 'session_class', 'password']
         widgets = {
-            'date': AdminDateWidget(attrs={'class': 'datepicker',}),
+            'date': AdminDateWidget(attrs={'class': 'datepicker', }),
         }
+
+
+class UpdateSessionForm(ModelForm):
+    class Meta:
+        model = Session
+        exclude = ['date', 'password', 'is_open', 'session_class']
+
+    def __init__(self, *args, **kwargs):
+        a = kwargs.pop('initial')
+        s = a.pop('session')
+        kwargs['initial'] = a
+        super(UpdateSessionForm, self).__init__(*args, **kwargs)
+        c = s.session_class
+        self.fields["students_present"].widget = forms.widgets.CheckboxSelectMultiple()
+        self.fields["students_present"].help_text = ""
+        self.fields["students_present"].queryset = c.enrolled_students
