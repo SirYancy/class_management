@@ -37,16 +37,6 @@ class CreateSessionForm(forms.ModelForm):
         }
 
 
-# class UpdateSessionForm(forms.Form):
-#     students_present = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple)
-#
-#     def __init__(self, session, *args, **kwargs):
-#         super(UpdateSessionForm, self).__init__(*args, **kwargs)
-#         c = session.session_class
-#         self.fields['students_present'].queryset = c.enrolled_students.all()
-#         # self.fields['students_present'].initial = [session.students_present]
-
-
 class UpdateSessionForm(forms.ModelForm):
     class Meta:
         model = Session
@@ -55,7 +45,8 @@ class UpdateSessionForm(forms.ModelForm):
     def __init__(self, session, *args, **kwargs):
         super(UpdateSessionForm, self).__init__(*args, **kwargs)
         c = session.session_class
+        ids = session.students_present.values_list('id', flat=True)
         self.fields['students_present'].widget = forms.widgets.CheckboxSelectMultiple()
-        self.fields['students_present'].helpt_text = ""
+        self.fields['students_present'].helpt_text = "Who was present?"
         self.fields['students_present'].queryset = c.enrolled_students.all()
-        self.fields['students_present'].initial = [session.students_present]
+        self.fields['students_present'].initial = ids
