@@ -74,16 +74,22 @@ class EnrollStudentsView(generic.UpdateView):
 
 def update_session(request, pk):
     if request.method == 'POST':
-        form = UpdateSessionForm(request.POST)
-        if form.is_valid():
-            s = Session.objects.get(id=pk)
-            s.students_present = form.students_present
-            s.save()
-            return HttpResponseRedirect('/instructor/class_detail%i' % s.session_class.id)
+        s = Session.objects.get(id=pk)
+        c = s.session_class
+        if 'students_present' in request.POST:
+            spid = request.POST.getlist('students_present')
+            spid = list(map(int, spid))
+            sp = Student.objects.filter(id__in=spid)
+            for student in sp:
+                s.students_present.add(student)
+        else:
+            s.students_present.clear()
+        return HttpResponseRedirect('/instructor/class_detail/%i' % c.id)
     else:
         s = Session.objects.get(id=pk)
-        form = UpdateSessionForm(initial={'students_present': s.students_present, 'session': s});
-        return render(request, "instructor/update_session.html", {"form": form, "session": s})
+        form = UpdateSessionForm(s)
+        ctx = {"form": form, "session": s}
+        return render(request, "instructor/update_session.html", ctx)
 
 
 class UpdateSessionView(generic.UpdateView):

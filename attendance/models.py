@@ -40,6 +40,9 @@ class Student(models.Model):
     last_name = models.CharField(max_length=30)
     student_id = models.CharField(max_length=6, unique=True)
 
+    class Meta:
+        ordering = ['last_name', 'first_name']
+
     def __str__(self):
         return self.student_id + ' ' + self.last_name
 

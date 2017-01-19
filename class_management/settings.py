@@ -26,12 +26,12 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
+    # 'localhost',
+    # '127.0.0.1',
     'attendance.erickuha.com',
     'safe-wave-43659.herokuapp.com'
 ]

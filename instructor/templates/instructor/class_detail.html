@@ -39,9 +39,9 @@
                                 <td>Student</td>
                                 {% for session in sessions %}
                                     {% if session.is_open %}
-                                        <td style="background-color: gold">{{ session.date }}</td>
+                                        <td style="background-color: gold"><a href="{% url 'instructor:update_session' session.id %}">{{ session.date }}</a></td>
                                     {% else %}
-                                        <td>{{ session.date }}</td>
+                                        <td><a href="{% url 'instructor:update_session' session.id %}">{{ session.date }}</a></td>
                                     {% endif %}
                                 {% endfor %}
                             </tr>
