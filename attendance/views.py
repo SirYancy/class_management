@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from django.urls import reverse
 from django.views import generic
 from django.views.generic.edit import FormView
 
@@ -27,6 +28,22 @@ class SignInView(FormView):
     form_class = SignInForm
 
 
+class StudentDetailView(generic.DetailView):
+    template_name = 'attendance/student_detail.html'
+    model = Student
+    context_object_name = 'student_detail'
+
+    def get_context_data(self, **kwargs):
+        context = super(StudentDetailView, self).get_context_data(**kwargs)
+        my_student = self.get_object()
+        my_class = Class.objects.get(id=self.kwargs['class'])
+        my_sessions = Session.objects.filter(session_class=my_class).order_by('date')
+        context['student'] = my_student
+        context['class'] = my_class
+        context['sessions'] = my_sessions
+        return context
+
+
 def verify(request):
     """
     Verifies student id, class, and password. If it all matches up, the student is marked present for the day.
@@ -46,12 +63,12 @@ def verify(request):
         s = sessions[0]
 
         if s.students_present.filter(id=student.id).exists():
-            return HttpResponse("<h3>You are already signed in</h3>")
+            return HttpResponseRedirect('../../attendance/student_detail/%i/%i' % (student.id, class_id))
         elif not s.is_open:
             return HttpResponse("This session is closed for signin.")
         elif student in current_class.enrolled_students.all() and request.GET.get('today_password') == s.password:
             s.students_present.add(student)
             s.save()
-            return HttpResponse("<h3>Thank you, %s</h3>" % student.first_name)
+            return HttpResponseRedirect('../../attendance/student_detail/%i/%i' % (student.id, class_id))
         else:
             return HttpResponse("<h3>Password or Class incorrect</h3>")
