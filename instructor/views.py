@@ -77,6 +77,7 @@ def update_session(request, pk):
         s = Session.objects.get(id=pk)
         c = s.session_class
         if 'students_present' in request.POST:
+            s.students_present.clear()
             spid = request.POST.getlist('students_present')
             spid = list(map(int, spid))
             sp = Student.objects.filter(id__in=spid)
@@ -90,20 +91,6 @@ def update_session(request, pk):
         form = UpdateSessionForm(s)
         ctx = {"form": form, "session": s}
         return render(request, "instructor/update_session.html", ctx)
-
-
-class UpdateSessionView(generic.UpdateView):
-    template_name = 'instructor/update_session.html'
-    form_class = UpdateSessionForm
-    context_object_name = 'session'
-
-    def get_object(self, queryset=None):
-        obj = Session.objects.get(id=self.kwargs['pk'])
-        return obj
-
-    def form_valid(self, form):
-        s = form.save()
-        return HttpResponseRedirect('/instructor/class_detail/%i' % s.session_class.id)
 
 
 class CreateStudentView(generic.CreateView):
