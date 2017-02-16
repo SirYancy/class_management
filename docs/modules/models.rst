@@ -1,4 +1,4 @@
 Models
 ======
-
-..automodule::
+.. automodule:: class_management.attendance.models
+   :members:
