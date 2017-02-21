@@ -18,7 +18,7 @@ Contents:
    :maxdepth: 2
 
    about_me.rst
-   modules/models.rst
+   modules/models
 
 Indices and tables
 ==================
@@ -26,4 +26,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

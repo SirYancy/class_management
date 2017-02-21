@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Kuha Class Management documentation build configuration file, created by
-# sphinx-quickstart on Thu Feb 16 14:15:49 2017.
+# sphinx-quickstart on Fri Feb 17 10:54:14 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -19,12 +19,15 @@
 #
 import os
 import sys
-
-sys.path.insert(0, os.path.abspath('..'))
-
+import django
 from django.conf import settings
 
+sys.path.insert(0, os.path.abspath('../../'))
 settings.configure()
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'class_management.settings'
+django.setup()
+
 
 # -- General configuration ------------------------------------------------
 
@@ -66,7 +69,7 @@ author = 'Eric Kuha'
 # built documents.
 #
 # The short X.Y version.
-version = '0.20a'
+version = '0.20'
 # The full version, including alpha/beta/rc tags.
 release = '20'
 
@@ -89,7 +92,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -121,6 +124,7 @@ pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
+
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -246,21 +250,21 @@ htmlhelp_basename = 'KuhaClassManagementdoc'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+     # The paper size ('letterpaper' or 'a4paper').
+     #
+     # 'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
+     # The font size ('10pt', '11pt' or '12pt').
+     #
+     # 'pointsize': '10pt',
 
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
+     # Additional stuff for the LaTeX preamble.
+     #
+     # 'preamble': '',
 
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+     # Latex figure (float) alignment
+     #
+     # 'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
